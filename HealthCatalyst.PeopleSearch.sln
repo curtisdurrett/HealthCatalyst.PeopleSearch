@@ -1,0 +1,43 @@
+
+Microsoft Visual Studio Solution File, Format Version 15.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCatalyst.CreateSQLiteDB", "HealthCatalyst.CreateSQLiteDB\HealthCatalyst.CreateSQLiteDB.csproj", "{B8CB8880-3086-42E2-A98B-78CE964EF7B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCatalyst.Domain", "HealthCatalyst.Domain\HealthCatalyst.Domain.csproj", "{F038D9FB-41CB-4C20-8273-08DE1C414434}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCatalyst.Data", "HealthCatalyst.Data\HealthCatalyst.Data.csproj", "{5B3AF7A2-5AB0-45E6-8AAE-483DE0C49E56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{18375C84-BC3E-4B6C-A716-AC837B5A9DB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCatalyst.Web.Api", "HealthCatalyst.Web.Api\HealthCatalyst.Web.Api.csproj", "{BE463155-5460-4BB3-9CB8-D0A53B26759B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCatalyst.Services", "HealthCatalyst.Services\HealthCatalyst.Services.csproj", "{141A0F61-20E5-44A9-98BA-88981C3DB465}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8CB8880-3086-42E2-A98B-78CE964EF7B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8CB8880-3086-42E2-A98B-78CE964EF7B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8CB8880-3086-42E2-A98B-78CE964EF7B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8CB8880-3086-42E2-A98B-78CE964EF7B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F038D9FB-41CB-4C20-8273-08DE1C414434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F038D9FB-41CB-4C20-8273-08DE1C414434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F038D9FB-41CB-4C20-8273-08DE1C414434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F038D9FB-41CB-4C20-8273-08DE1C414434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B3AF7A2-5AB0-45E6-8AAE-483DE0C49E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B3AF7A2-5AB0-45E6-8AAE-483DE0C49E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B3AF7A2-5AB0-45E6-8AAE-483DE0C49E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B3AF7A2-5AB0-45E6-8AAE-483DE0C49E56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE463155-5460-4BB3-9CB8-D0A53B26759B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE463155-5460-4BB3-9CB8-D0A53B26759B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE463155-5460-4BB3-9CB8-D0A53B26759B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE463155-5460-4BB3-9CB8-D0A53B26759B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{141A0F61-20E5-44A9-98BA-88981C3DB465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{141A0F61-20E5-44A9-98BA-88981C3DB465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{141A0F61-20E5-44A9-98BA-88981C3DB465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{141A0F61-20E5-44A9-98BA-88981C3DB465}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
