@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HealthCatalyst.Domain\HealthCatalyst.Domain.csproj" />
+    <ProjectReference Include="..\HealthCatalyst.Data\HealthCatalyst.Data.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="PersonContext.cs" />
+    <Compile Remove="Migrations\20171126163227_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20171126163227_InitialCreate.cs" />
+    <Compile Remove="Migrations\PersonContextModelSnapshot.cs" />
+    <Compile Remove="EmptyClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="healthcatalyst.db" />
+  </ItemGroup>
+</Project>

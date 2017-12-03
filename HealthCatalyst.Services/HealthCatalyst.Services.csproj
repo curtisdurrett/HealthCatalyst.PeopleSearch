@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HealthCatalyst.Data\HealthCatalyst.Data.csproj" />
+    <ProjectReference Include="..\HealthCatalyst.Domain\HealthCatalyst.Domain.csproj" />
+  </ItemGroup>
+</Project>
