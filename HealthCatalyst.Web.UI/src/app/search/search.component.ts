@@ -11,6 +11,7 @@ import { SearchService } from "./search.service";
   styleUrls: ["./search.component.css"]
 })
 export class SearchComponent {
+  isBusy = false;
   searchForm = new FormGroup({
     searchTerm: new FormControl()
   });
@@ -26,6 +27,7 @@ export class SearchComponent {
   }
 
   public searchName() {
+    this.isBusy = true;
     const formModel = this.searchForm.value;
     // clear prior to reloading search results
     this.people = null;
@@ -35,6 +37,7 @@ export class SearchComponent {
       .getPeopleByName(formModel.searchTerm)
       .subscribe(people => {
         this.people = people;
+        this.isBusy = false;
       });
   }
 }

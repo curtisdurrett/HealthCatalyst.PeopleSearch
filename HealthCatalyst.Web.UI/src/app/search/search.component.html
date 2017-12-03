@@ -1,17 +1,28 @@
 <div>
-    <h2>People Search</h2>
-    <form [formGroup]="searchForm" novalidate>
-        <div class="form-group">
-          <label class="center-block">Enter Search:
-            <input class="form-control" formControlName="searchTerm">
-            <button (click)="searchStream$.next()" type="button" class="btn btn-success">Search</button>
-          </label>
-        </div>
-      </form>
-      <ul>
-          <li *ngFor="let person of people">
-            <span>{{person.firstName}} {{person.lastName}} {{person.age}} {{person.address}} {{person.imagePath}}</span>
-          </li>
-        </ul>
-      <p>Form value: {{ searchForm.value | json }}</p>
+  <h2>People Search</h2>
+  <p *ngIf="isBusy">
+    <i>Loading people...{{ searchForm[searchName] | json }}</i>
+  </p>
+  <form *ngIf="!isBusy" [formGroup]="searchForm" novalidate>
+    <div class="form-group">
+      <label class="center-block">Enter Search:
+        <input class="form-control" formControlName="searchTerm">
+        <button (click)="searchStream$.next()" type="button" class="btn btn-success">Search</button>
+      </label>
+    </div>
+  </form>
+  <table class="table">
+    <thead>
+        <th></th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Address</th>
+    </thead>
+    <tr *ngFor="let person of people" >
+      <td><img src="../../assets/images/people/{{person.imagePath}}" class="img-thumbnail" alt="{{person.imagePath}}"  width="75" height="60"></td>
+      <td>{{person.firstName}} {{person.lastName}}</td>
+      <td>{{person.age}}</td>
+      <td>{{person.address}}</td>
+    </tr>
+  </table>
 </div>

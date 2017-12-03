@@ -10,11 +10,13 @@ import 'rxjs/add/operator/map';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { SearchService } from './search/search.service';
+import { HeaderComponent } from './layout/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchComponent
+    SearchComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
