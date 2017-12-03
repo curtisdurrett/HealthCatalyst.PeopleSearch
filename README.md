@@ -17,6 +17,14 @@
 #### API / Service / Data Access
   * Created with Visual Studio for Mac 2017 
   * .NET Core 2
+  * SQLite Db
+  * Micrsoft Entity Framework Core 2
+  To start the Web API up:
+   * Open the HealthCatalyst.PeopleSearch.snl with Visual Studio
+   * Right click on the HealthCatalyst.Web.Api project and select 'Set As Startup Project'
+   * Click the 'Run' button on the Visual Studio tool bar
+   * This should open a browser window pointer to http://localhost:5000/api/values
+   * If you would like to test API endpoint the follow URL should return data              http://localhost:5000/api/v1/person/searchByName/c
   
 #### Web UI
   * Create with Visual Studio Code for Mac
