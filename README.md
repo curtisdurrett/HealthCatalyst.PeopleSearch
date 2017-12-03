@@ -1,3 +1,5 @@
+![ScreenShot](https://github.com/curtisdurrett/HealthCatalyst.PeopleSearch/blob/master/HealthCatalyst.Web.UI/src/assets/images/healthcatlyst.svg)
+
 ## The People Search Application
 
 ### Business Requirements
