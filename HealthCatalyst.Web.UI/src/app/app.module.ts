@@ -10,20 +10,13 @@ import 'rxjs/add/operator/map';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { SearchService } from './search/search.service';
+import { TestSearchService } from './search/testSearch.service';
 import { HeaderComponent } from './layout/header.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SearchComponent,
-    HeaderComponent
-  ],
-  imports: [
-    BrowserModule,
-    HttpModule,
-    ReactiveFormsModule
-  ],
-  providers: [SearchService],
+  declarations: [AppComponent, SearchComponent, HeaderComponent],
+  imports: [BrowserModule, HttpModule, ReactiveFormsModule],
+  providers: [SearchService, TestSearchService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

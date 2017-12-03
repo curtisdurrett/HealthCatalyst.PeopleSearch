@@ -1,23 +1,23 @@
-import { Component, OnInit } from "@angular/core";
-import { FormControl, FormGroup } from "@angular/forms";
-import { Observable, Subject } from "rxjs/Rx";
+import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { Observable, Subject } from 'rxjs/Rx';
 
-import { Person } from './model/Person';
-import { SearchService } from "./search.service";
+import { PersonResult } from './model/PersonResult';
+import { SearchService } from './search.service';
+// TODO: Move TestService config
+// import { TestSearchService } from './testSearch.service';
 
 @Component({
-  selector: "app-search",
-  templateUrl: "./search.component.html",
-  styleUrls: ["./search.component.css"]
+  selector: 'app-search',
+  templateUrl: './search.component.html',
+  styleUrls: ['./search.component.css']
 })
 export class SearchComponent {
-  isBusy = false;
-  searchForm = new FormGroup({
+  public isBusy = false;
+  public searchForm = new FormGroup({
     searchTerm: new FormControl()
   });
-
-  public people = Array<Person>();
-
+  public people = Array<PersonResult>();
   public searchStream$: Observable<any> = new Subject<any>();
 
   constructor(private searchService: SearchService) {

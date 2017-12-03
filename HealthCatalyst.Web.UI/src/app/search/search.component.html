@@ -1,28 +1,34 @@
 <div>
-  <h2>People Search</h2>
+  <h3>People Search</h3>
   <p *ngIf="isBusy">
     <i>Loading people...{{ searchForm[searchName] | json }}</i>
+    <i class="fa fa-refresh fa-spin" style="font-size:24px"></i>
   </p>
   <form *ngIf="!isBusy" [formGroup]="searchForm" novalidate>
     <div class="form-group">
-      <label class="center-block">Enter Search:
-        <input class="form-control" formControlName="searchTerm">
-        <button (click)="searchStream$.next()" type="button" class="btn btn-success">Search</button>
-      </label>
+      <label for="searchTerm">Enter Search:</label>
+      <input class="form-control" formControlName="searchTerm" required>
     </div>
+    <button (click)="searchStream$.next()" [disabled]="!searchForm.valid" type="button" class="btn btn-primary">Search</button>
   </form>
-  <table class="table">
-    <thead>
-        <th></th>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Address</th>
-    </thead>
-    <tr *ngFor="let person of people" >
-      <td><img src="../../assets/images/people/{{person.imagePath}}" class="img-thumbnail" alt="{{person.imagePath}}"  width="75" height="60"></td>
-      <td>{{person.firstName}} {{person.lastName}}</td>
-      <td>{{person.age}}</td>
-      <td>{{person.address}}</td>
-    </tr>
-  </table>
+  <div>
+    <div *ngIf="!isBusy" class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-3">Name</div>
+      <div class="col-lg-3">Interest</div>
+      <div class="col-lg-1">Age</div>
+      <div class="col-lg-4">Address</div>
+    </div>
+    <hr>
+    <div *ngFor="let person of people" class="row">
+      <div class="col-lg-1">
+        <img src="../../assets/images/people/{{person.pictureFileName}}" class="img-thumbnail" alt="{{person.pictureFileName}}" width="75"
+          height="90">
+      </div>
+      <div class="col-lg-3">{{person.name}}</div>
+      <div class="col-lg-3">{{person.interests}}</div>
+      <div class="col-lg-1">{{person.age}}</div>
+      <div class="col-lg-4">{{person.address}}</div>
+    </div>
+  </div>
 </div>
