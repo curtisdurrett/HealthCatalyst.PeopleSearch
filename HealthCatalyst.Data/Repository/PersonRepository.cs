@@ -17,7 +17,7 @@ namespace HealthCatalyst.Data.Repository
             _databaseContext = databaseContext;
         }
 
-        public async Task<IList<Person>> SearchByName(string searchString)
+        public async Task<List<Person>> SearchByName(string searchString)
         {
 
             var persons = _databaseContext.Persons

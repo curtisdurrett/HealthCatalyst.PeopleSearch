@@ -7,6 +7,6 @@ namespace HealthCatalyst.Data.Repository
 {
     public interface IPersonRepository
     {
-        Task<IList<Person>> SearchByName(string searchString);        
+        Task<List<Person>> SearchByName(string searchString);        
     }
 }
