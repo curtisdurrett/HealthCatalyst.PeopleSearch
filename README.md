@@ -36,3 +36,4 @@
      * Open a console window in the HealthCatalyst.Web.UI directory and Run: npm install
      * Once the NPM packages have been installed Run: ng serve -o, which will open a browser window pointed to                      http://localhost:4200/
  
+![ScreenShot](https://github.com/curtisdurrett/HealthCatalyst.PeopleSearch/blob/master/searchApp.png)
