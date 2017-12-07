@@ -39,6 +39,8 @@
      * In the same console windows Run: npm install -g @angular/cli
      * Once the NPM packages have been installed Run: ng serve -o   (will open a browser window pointed to                      http://localhost:4200/)
      
+   Note: I did my best to make sure the repository / solution would load, build and run without problems.  I starting building the solution in Visual Studio for Mac but I did test opening, building and running it in Visual Studio Community 2017 15.5 on a Windows 10 VM.  If you run into an issue loading, building or running please ping me at curtis.durrett@gmail.com and I'd be happy to correct the issue.      
+     
  #### Things About the App
      * The App already has data loaded into the SQLite DB however if you would like to re-seed the data you can use the http://localhost:5000/api/v1/person/seedData endpoint.  I was going to add a button in the UI to call it but it just didn't seem right so I didn't.  
      * To simulate slow searchesI included a 1 second delay in the UI after it returns from the http call.  The delay can be changed by changing the value of _millisecondToDelay in search.service.ts file.  
