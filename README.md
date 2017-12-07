@@ -17,11 +17,12 @@
 ### Application Tooling
  
 #### API / Service / Data Access
-  * Created with Visual Studio for Mac 2017 (I tested on a Windows 10 machine using Visual Studio 2017 build 15.5.0) 
+  * Created with Visual Studio Community for Mac (I tested on a Windows 10 machine using Visual Studio 2017 build 15.5.0) 
   * .NET Core 2
   * SQLite Db
   * Micrsoft Entity Framework Core 2
    * To start the Web API up:
+   * Install Visual Studio 2017 if you havn't already
    * Open the HealthCatalyst.PeopleSearch.snl with Visual Studio
    * Right click on the HealthCatalyst.Web.Api project and select 'Set As Startup Project'
    * Click the 'Run' button on the Visual Studio tool bar
@@ -31,8 +32,9 @@
 #### Web UI
   * Created with Visual Studio Code for Mac
   * Angular 4
-  * Served via Node (Download node at https://nodejs.org/en/download/)
+  * Served via Node
      * To start the Web UI up
+     * Install NPM if you havn't already (Download node at https://nodejs.org/en/download/)
      * Open a console window in the HealthCatalyst.Web.UI directory and Run: npm install
      * In the same console windows Run: npm install -g @angular/cli
      * Once the NPM packages have been installed Run: ng serve -o   (will open a browser window pointed to                      http://localhost:4200/)
