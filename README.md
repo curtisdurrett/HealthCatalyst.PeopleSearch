@@ -31,9 +31,10 @@
 #### Web UI
   * Created with Visual Studio Code for Mac
   * Angular 4
-  * Served via Node
+  * Served via Node https://nodejs.org/en/download/
   To start the Web UI up
      * Open a console window in the HealthCatalyst.Web.UI directory and Run: npm install
-     * Once the NPM packages have been installed Run: ng serve -o, which will open a browser window pointed to                      http://localhost:4200/
+     * In the same console windows Run: npm install -g @angular/cli
+     * Once the NPM packages have been installed Run: ng serve -o   (will open a browser window pointed to                      http://localhost:4200/)
  
 ![ScreenShot](https://github.com/curtisdurrett/HealthCatalyst.PeopleSearch/blob/master/searchApp.png)
