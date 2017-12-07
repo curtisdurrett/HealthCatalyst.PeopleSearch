@@ -43,4 +43,34 @@
      * The App already has data loaded into the SQLite DB however if you would like to re-seed the data you can use the http://localhost:5000/api/v1/person/seedData endpoint.  I was going to add a button in the UI to call it but it just didn't seem right so I didn't.  
      * To simulte slow searchesI included a 1 second delay in the UI after it returns from the http call.  The delay can be changed by changing the value of _millisecondToDelay in search.service.ts file.  
  
+ #### Sample Screen Shot:
 ![ScreenShot](https://github.com/curtisdurrett/HealthCatalyst.PeopleSearch/blob/master/searchApp.png)
+
+#### Things I wanted to do but ran out of time...
+  To Do:
+
+  UI.
+  1. Setup config swapping of search service / test search service
+  2. Add unit test for search service
+  3. Bootstrap responsive design, mobile tags
+  4. Load image from image byte array returned from api service
+  5. Add paging support
+  6. Create a logging service and log, log, log
+  7. Generally improve the look
+
+  Service
+  1. Define the data types in EF
+  2. Build integration test
+
+  Web.Api
+  1. Add Swagger
+  2. Move configuration settings to appsettings.json 
+  3. Add log4net and log, log, log
+  4. Handle special chars in search
+  5. Build intergration test 
+
+  Repository
+  1. Check to make sure you can pull the solution down and easy run it
+  2. Figure out a better way to launch seed data process
+  3. Store image DB
+  4. Move DB connection string to appsetting.json 
