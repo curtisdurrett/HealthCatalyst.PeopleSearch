@@ -4,7 +4,7 @@ import { Observable, Subject } from 'rxjs/Rx';
 
 import { PersonResult } from './model/PersonResult';
 import { SearchService } from './search.service';
-// TODO: Move TestService config
+// TODO: Move TestService to config
 // import { TestSearchService } from './testSearch.service';
 
 @Component({

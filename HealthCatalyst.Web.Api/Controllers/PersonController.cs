@@ -20,8 +20,7 @@ namespace HealthCatalyst.Web.Api.Controllers
             _personSearchService = personSearchService;
             _personDataSeederService = personDataSeederService;
         }
-        
-        // GET api/values
+
         [HttpGet("searchByName/{searchString}")]
         [AcceptVerbs]
         public async Task<IActionResult> SearchByName(string searchString)
@@ -37,7 +36,7 @@ namespace HealthCatalyst.Web.Api.Controllers
             return Ok(ret);
         }
 
-        // GET api/values
+        // TODO: Come up with a better way to seeding the data.
         [HttpGet("seedData")]
         public async Task<IActionResult> SeedData()
         {

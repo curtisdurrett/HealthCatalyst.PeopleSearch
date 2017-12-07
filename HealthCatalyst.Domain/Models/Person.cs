@@ -9,6 +9,7 @@ namespace HealthCatalyst.Domain.Models
         public string LastName { get; set; }
         public DateTime DateOfBirth { get; set; }
         public string Interests { get; set; }
+        // TODO:  Image should be stored as a blob in the DB.   
         public string PictureFileName { get; set; }
         public string AddressLine1 { get; set; }
         public string AddressLine2 { get; set; }
