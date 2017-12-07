@@ -29,7 +29,7 @@
    * If you would like to test API endpoint the follow URL should return data              http://localhost:5000/api/v1/person/searchByName/c
   
 #### Web UI
-  * Create with Visual Studio Code for Mac
+  * Created with Visual Studio Code for Mac
   * Angular 4
   * Served via Node
   To start the Web UI up
