@@ -72,7 +72,6 @@
   5. Build intergration test 
 
   Repository
-  1. Check to make sure you can pull the solution down and easy run it
-  2. Figure out a better way to launch seed data process
-  3. Store image DB
-  4. Move DB connection string to appsetting.json 
+  1. Figure out a better way to launch seed data process
+  2. Store image DB
+  3. Move DB connection string to appsetting.json 
