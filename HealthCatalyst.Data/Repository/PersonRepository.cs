@@ -17,6 +17,26 @@ namespace HealthCatalyst.Data.Repository
             _databaseContext = databaseContext;
         }
 
+        public void Add(Person person)
+        {
+            _databaseContext.Persons.Add(person);
+            _databaseContext.SaveChanges();
+        }
+
+        public async Task<int> DeleteAllPersons()
+        {
+            int count = 0;
+            var rows = from o in _databaseContext.Persons
+                       select o;
+            foreach (var row in rows)
+            {
+                _databaseContext.Persons.Remove(row);
+                count++;
+            }
+            await _databaseContext.SaveChangesAsync();
+            return count;
+        }
+
         public async Task<List<Person>> SearchByName(string searchString)
         {
 

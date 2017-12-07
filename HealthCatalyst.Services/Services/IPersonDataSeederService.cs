@@ -8,6 +8,6 @@ namespace HealthCatalyst.Services
 {
     public interface IPersonDataSeederService
     {
-        int SeedData();
+        Task<int> SeedData();
     }
 }

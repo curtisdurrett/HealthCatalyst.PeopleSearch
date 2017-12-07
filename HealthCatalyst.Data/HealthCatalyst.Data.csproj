@@ -18,4 +18,8 @@
     <Folder Include="Repository\" />
     <Folder Include="DataSeeder\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="DataSeeder\PersonDataSeeder.cs" />
+    <Compile Remove="DataSeeder\IPersonDataSeeder.cs" />
+  </ItemGroup>
 </Project>

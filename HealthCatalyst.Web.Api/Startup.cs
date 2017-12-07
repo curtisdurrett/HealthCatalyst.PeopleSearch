@@ -42,9 +42,10 @@ namespace HealthCatalyst.Web.Api
             // TODO: Move the connection string to configuration value
             services.AddDbContext<DatabaseContext>(options => options.UseSqlite("Data Source=healthcatalyst.db"));
 
-            // 
+            // DI the services
             services.AddScoped<IPersonRepository, PersonRepository>();
             services.AddScoped<IPersonSearchService, PersonSearchService>();
+            services.AddScoped<IPersonDataSeederService, PersonDataSeederService>();
 
         }
 
