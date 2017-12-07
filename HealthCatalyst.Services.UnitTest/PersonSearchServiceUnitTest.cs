@@ -1,13 +1,11 @@
+using Moq;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Xunit;
 
-using Moq;
-
 using HealthCatalyst.Domain.Models;
 using HealthCatalyst.Data.Repository;
-using HealthCatalyst.Services;
 
 namespace HealthCatalyst.Services.UnitTest
 {

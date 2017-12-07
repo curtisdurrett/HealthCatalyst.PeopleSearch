@@ -27,8 +27,6 @@ namespace HealthCatalyst.Web.Api.UnitTest
 
             var mockPersonDataSeederService = new Mock<IPersonDataSeederService>();
 
-
-
             var sut = new PersonController(mockPersonSearchService.Object,
                                            mockPersonDataSeederService.Object);
 

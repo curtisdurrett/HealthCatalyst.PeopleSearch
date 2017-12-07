@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 
 using HealthCatalyst.Data;
 using HealthCatalyst.Data.Repository;
@@ -28,7 +22,8 @@ namespace HealthCatalyst.Web.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
+
+            // TODO:  Change to be more secure
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowAny", builder => builder.AllowAnyOrigin()

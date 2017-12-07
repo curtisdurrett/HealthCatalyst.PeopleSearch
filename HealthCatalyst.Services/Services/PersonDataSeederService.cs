@@ -1,17 +1,8 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Threading.Tasks;
-
-//using HealthCatalyst.Data.Repository;
-//using HealthCatalyst.Domain.Models;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Threading.Tasks;
 
 using HealthCatalyst.Data.Repository;
 using HealthCatalyst.Domain.Models;
-
-using HealthCatalyst.Services.Models;
 
 namespace HealthCatalyst.Services
 {

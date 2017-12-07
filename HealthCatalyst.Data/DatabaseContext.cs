@@ -18,9 +18,11 @@ namespace HealthCatalyst.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            // TODO: Move connection string to config 
             optionsBuilder.UseSqlite("Data Source=healthcatalyst.db");
         }
 
+        // TODO: Add DB types for person
         //protected override void OnModelCreating(ModelBuilder builder)
         //{
         //    builder.ApplyConfiguration(new PersonConfiguration());

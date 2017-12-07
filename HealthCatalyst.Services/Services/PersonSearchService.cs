@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 
 using HealthCatalyst.Data.Repository;
 using HealthCatalyst.Domain.Models;
-
 using HealthCatalyst.Services.Models;
 
 namespace HealthCatalyst.Services
@@ -21,7 +20,6 @@ namespace HealthCatalyst.Services
         public async Task<List<PersonResult>> SearchByName(string searchString)
         {
             var personResults = new List<PersonResult>();
-            //var x = await _personRepository.SearchByName(searchString);
             foreach (Person p in await _personRepository.SearchByName(searchString))
             {
                 var personResult = new PersonResult
