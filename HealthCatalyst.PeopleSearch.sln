@@ -1,21 +1,21 @@
-
-Microsoft Visual Studio Solution File, Format Version 15.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCatalyst.CreateSQLiteDB", "HealthCatalyst.CreateSQLiteDB\HealthCatalyst.CreateSQLiteDB.csproj", "{B8CB8880-3086-42E2-A98B-78CE964EF7B9}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCatalyst.CreateSQLiteDB", "HealthCatalyst.CreateSQLiteDB\HealthCatalyst.CreateSQLiteDB.csproj", "{D8D34C30-64D8-41C5-A11C-7200A63E9C36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCatalyst.Domain", "HealthCatalyst.Domain\HealthCatalyst.Domain.csproj", "{F038D9FB-41CB-4C20-8273-08DE1C414434}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCatalyst.Data", "HealthCatalyst.Data\HealthCatalyst.Data.csproj", "{3AD472D6-9D74-4925-AD03-7A79EC1CD2B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCatalyst.Data", "HealthCatalyst.Data\HealthCatalyst.Data.csproj", "{5B3AF7A2-5AB0-45E6-8AAE-483DE0C49E56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCatalyst.Domain", "HealthCatalyst.Domain\HealthCatalyst.Domain.csproj", "{2CD6C3CE-DDCB-4994-9F68-3EE205B0484D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{18375C84-BC3E-4B6C-A716-AC837B5A9DB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCatalyst.Services", "HealthCatalyst.Services\HealthCatalyst.Services.csproj", "{2D33A359-B151-4ADD-8D0E-235740FD4FE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCatalyst.Web.Api", "HealthCatalyst.Web.Api\HealthCatalyst.Web.Api.csproj", "{BE463155-5460-4BB3-9CB8-D0A53B26759B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCatalyst.Services.UnitTest", "HealthCatalyst.Services.UnitTest\HealthCatalyst.Services.UnitTest.csproj", "{8FAA29F5-B04D-49CB-8240-72A92A0EB57E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCatalyst.Services", "HealthCatalyst.Services\HealthCatalyst.Services.csproj", "{141A0F61-20E5-44A9-98BA-88981C3DB465}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCatalyst.Web.Api", "HealthCatalyst.Web.Api\HealthCatalyst.Web.Api.csproj", "{45638FC6-EFC1-44A2-9CA7-F82F990A10C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCatalyst.Services.UnitTest", "HealthCatalyst.Services.UnitTest\HealthCatalyst.Services.UnitTest.csproj", "{09E8AADA-1A2B-4F24-AC46-C9E3E7659C41}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCatalyst.Web.Api.UnitTest", "HealthCatalyst.Web.Api.UnitTest\HealthCatalyst.Web.Api.UnitTest.csproj", "{56C65A40-CD63-411D-991C-51CA0A402DB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCatalyst.Web.Api.UnitTest", "HealthCatalyst.Web.Api.UnitTest\HealthCatalyst.Web.Api.UnitTest.csproj", "{961B0EAE-9428-4B8B-A7E4-0D26AB4287CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,33 +23,39 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B8CB8880-3086-42E2-A98B-78CE964EF7B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8CB8880-3086-42E2-A98B-78CE964EF7B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8CB8880-3086-42E2-A98B-78CE964EF7B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B8CB8880-3086-42E2-A98B-78CE964EF7B9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F038D9FB-41CB-4C20-8273-08DE1C414434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F038D9FB-41CB-4C20-8273-08DE1C414434}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F038D9FB-41CB-4C20-8273-08DE1C414434}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F038D9FB-41CB-4C20-8273-08DE1C414434}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5B3AF7A2-5AB0-45E6-8AAE-483DE0C49E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5B3AF7A2-5AB0-45E6-8AAE-483DE0C49E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5B3AF7A2-5AB0-45E6-8AAE-483DE0C49E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5B3AF7A2-5AB0-45E6-8AAE-483DE0C49E56}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BE463155-5460-4BB3-9CB8-D0A53B26759B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BE463155-5460-4BB3-9CB8-D0A53B26759B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BE463155-5460-4BB3-9CB8-D0A53B26759B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BE463155-5460-4BB3-9CB8-D0A53B26759B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{141A0F61-20E5-44A9-98BA-88981C3DB465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{141A0F61-20E5-44A9-98BA-88981C3DB465}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{141A0F61-20E5-44A9-98BA-88981C3DB465}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{141A0F61-20E5-44A9-98BA-88981C3DB465}.Release|Any CPU.Build.0 = Release|Any CPU
-		{09E8AADA-1A2B-4F24-AC46-C9E3E7659C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{09E8AADA-1A2B-4F24-AC46-C9E3E7659C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{09E8AADA-1A2B-4F24-AC46-C9E3E7659C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{09E8AADA-1A2B-4F24-AC46-C9E3E7659C41}.Release|Any CPU.Build.0 = Release|Any CPU
-		{56C65A40-CD63-411D-991C-51CA0A402DB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{56C65A40-CD63-411D-991C-51CA0A402DB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{56C65A40-CD63-411D-991C-51CA0A402DB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{56C65A40-CD63-411D-991C-51CA0A402DB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8D34C30-64D8-41C5-A11C-7200A63E9C36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8D34C30-64D8-41C5-A11C-7200A63E9C36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8D34C30-64D8-41C5-A11C-7200A63E9C36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8D34C30-64D8-41C5-A11C-7200A63E9C36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AD472D6-9D74-4925-AD03-7A79EC1CD2B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD472D6-9D74-4925-AD03-7A79EC1CD2B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD472D6-9D74-4925-AD03-7A79EC1CD2B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD472D6-9D74-4925-AD03-7A79EC1CD2B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CD6C3CE-DDCB-4994-9F68-3EE205B0484D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CD6C3CE-DDCB-4994-9F68-3EE205B0484D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CD6C3CE-DDCB-4994-9F68-3EE205B0484D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CD6C3CE-DDCB-4994-9F68-3EE205B0484D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D33A359-B151-4ADD-8D0E-235740FD4FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D33A359-B151-4ADD-8D0E-235740FD4FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D33A359-B151-4ADD-8D0E-235740FD4FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D33A359-B151-4ADD-8D0E-235740FD4FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FAA29F5-B04D-49CB-8240-72A92A0EB57E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FAA29F5-B04D-49CB-8240-72A92A0EB57E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FAA29F5-B04D-49CB-8240-72A92A0EB57E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FAA29F5-B04D-49CB-8240-72A92A0EB57E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45638FC6-EFC1-44A2-9CA7-F82F990A10C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45638FC6-EFC1-44A2-9CA7-F82F990A10C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45638FC6-EFC1-44A2-9CA7-F82F990A10C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45638FC6-EFC1-44A2-9CA7-F82F990A10C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{961B0EAE-9428-4B8B-A7E4-0D26AB4287CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{961B0EAE-9428-4B8B-A7E4-0D26AB4287CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{961B0EAE-9428-4B8B-A7E4-0D26AB4287CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{961B0EAE-9428-4B8B-A7E4-0D26AB4287CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C652691-1B34-4D04-B4DB-462FF848B5A7}
 	EndGlobalSection
 EndGlobal
