@@ -41,7 +41,7 @@
      
  #### Things About the App
      * The App already has data loaded into the SQLite DB however if you would like to re-seed the data you can use the http://localhost:5000/api/v1/person/seedData endpoint.  I was going to add a button in the UI to call it but it just didn't seem right so I didn't.  
-     * To simulte slow searchesI included a 1 second delay in the UI after it returns from the http call.  The delay can be changed by changing the value of _millisecondToDelay in search.service.ts file.  
+     * To simulate slow searchesI included a 1 second delay in the UI after it returns from the http call.  The delay can be changed by changing the value of _millisecondToDelay in search.service.ts file.  
  
  #### Sample Screen Shot:
 ![ScreenShot](https://github.com/curtisdurrett/HealthCatalyst.PeopleSearch/blob/master/searchApp.png)
