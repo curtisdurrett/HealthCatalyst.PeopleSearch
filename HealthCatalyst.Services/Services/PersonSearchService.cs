@@ -18,7 +18,7 @@ namespace HealthCatalyst.Services
             _personRepository = personRepository; 
         }
 
-        public async Task<IList<PersonResult>> SearchByName(string searchString)
+        public async Task<List<PersonResult>> SearchByName(string searchString)
         {
             var personResults = new List<PersonResult>();
             //var x = await _personRepository.SearchByName(searchString);

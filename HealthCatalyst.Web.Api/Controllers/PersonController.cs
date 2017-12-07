@@ -11,11 +11,14 @@ namespace HealthCatalyst.Web.Api.Controllers
     public class PersonController : Controller
     {
         private readonly IPersonSearchService _personSearchService;
+        private readonly IPersonDataSeederService _personDataSeederService;
 
         public PersonController(
-            IPersonSearchService personSearchService)
+            IPersonSearchService personSearchService,
+            IPersonDataSeederService personDataSeederService)
         {
             _personSearchService = personSearchService;
+            _personDataSeederService = personDataSeederService;
         }
         
         // GET api/values
@@ -36,11 +39,10 @@ namespace HealthCatalyst.Web.Api.Controllers
 
         // GET api/values
         [HttpGet("seedData")]
-        public async Task<IActionResult> seedData()
+        public async Task<IActionResult> SeedData()
         {
-            //int recordsInserted = await _personDataSeederService.SeedData();
-            //return Ok();
-            return null;
+            int recordsInserted = await _personDataSeederService.SeedData();
+            return Ok();
         }
     }
 }

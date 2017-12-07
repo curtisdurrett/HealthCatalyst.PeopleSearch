@@ -8,6 +8,6 @@ namespace HealthCatalyst.Services
 {
     public interface IPersonSearchService
     {
-        Task<IList<PersonResult>> SearchByName(string searchString);
+        Task<List<PersonResult>> SearchByName(string searchString);
     }
 }

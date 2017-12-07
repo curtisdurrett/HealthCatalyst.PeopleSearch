@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCatalyst.Services", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCatalyst.Services.UnitTest", "HealthCatalyst.Services.UnitTest\HealthCatalyst.Services.UnitTest.csproj", "{09E8AADA-1A2B-4F24-AC46-C9E3E7659C41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCatalyst.Web.Api.UnitTest", "HealthCatalyst.Web.Api.UnitTest\HealthCatalyst.Web.Api.UnitTest.csproj", "{56C65A40-CD63-411D-991C-51CA0A402DB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,5 +47,9 @@ Global
 		{09E8AADA-1A2B-4F24-AC46-C9E3E7659C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09E8AADA-1A2B-4F24-AC46-C9E3E7659C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09E8AADA-1A2B-4F24-AC46-C9E3E7659C41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56C65A40-CD63-411D-991C-51CA0A402DB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C65A40-CD63-411D-991C-51CA0A402DB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C65A40-CD63-411D-991C-51CA0A402DB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C65A40-CD63-411D-991C-51CA0A402DB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
