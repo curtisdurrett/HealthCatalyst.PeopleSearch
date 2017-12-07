@@ -17,7 +17,7 @@
 ### Application Tooling
  
 #### API / Service / Data Access
-  * Created with Visual Studio for Mac 2017 
+  * Created with Visual Studio for Mac 2017 (I tested on a Windows 10 machine using Visual Studio 2017 build 15.5.0) 
   * .NET Core 2
   * SQLite Db
   * Micrsoft Entity Framework Core 2
